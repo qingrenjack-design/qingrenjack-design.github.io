@@ -1051,29 +1051,40 @@ html, body {
 
 const KNOWLEDGE_BASE = [
   {
-    trigger_keywords: ["心脏病","胸口痛","胸闷","心梗","恶心","很累","疲劳","头晕"],
+    title: "女性心血管症状与误诊",
+    trigger_keywords: ["心脏病","胸口痛","胸闷","心梗","心肌梗死","心脏不舒服","恶心","想吐","很累","疲劳","头晕","后背疼","下颌疼","气短","呼吸困难"],
     female_specific_info: "女性心脏病发作常表现为恶心、极度疲劳、背部疼痛、下颌疼痛，而非典型的胸痛左臂疼痛。女性误诊率比男性高约50%。如有上述症状应立即就医，不要因为'不像心脏病'而忽视。",
     source: "《看不见的女性》；美国心脏协会女性心脏病指南"
   },
   {
-    trigger_keywords: ["布洛芬","止痛药","用药","剂量","药","反应大","副作用"],
+    title: "女性药物剂量与副作用",
+    trigger_keywords: ["布洛芬","止痛药","用药","剂量","药","药量","吃多少","反应大","副作用","不良反应","代谢","安眠药","药物"],
     female_specific_info: "大多数药物临床试验以70kg成年男性为标准制定剂量。女性体重通常偏轻、体脂率不同，对部分药物的代谢速度不同，可能需要调整剂量。女性报告的药物副作用是男性的约1.5倍。建议咨询医生获取个性化建议。",
     source: "美国FDA药物性别差异研究报告"
   },
   {
-    trigger_keywords: ["车祸","碰撞","驾车安全","安全带","受伤"],
+    title: "交通安全与碰撞测试偏差",
+    trigger_keywords: ["车祸","碰撞","驾车安全","安全带","受伤","假人","汽车","撞车","副驾驶","驾驶","交通事故"],
     female_specific_info: "汽车碰撞测试长期仅使用男性体型假人（50百分位男性），女性专用假人直到2011年才在美国部分测试中被引入。研究显示女性在同等碰撞事故中的受伤概率比男性高约47%，致命受伤风险高71%。",
     source: "《看不见的女性》第3章；弗吉尼亚大学交通安全研究中心2019年报告"
   },
   {
-    trigger_keywords: ["加班","工资","薪酬","薪酬谈判","谈薪","升职","职场","涨薪","难搞"],
+    title: "职场谈薪与隐性偏见",
+    trigger_keywords: ["加班","工资","薪酬","薪酬谈判","谈薪","升职","职场","涨薪","难搞","老板","晋升","绩效","offer","面试","同工同酬"],
     female_specific_info: "女性在薪酬谈判中面临'双重绑定'困境：主动要求加薪可能被认为'太aggressive'而受到隐性惩罚，但不谈判则导致薪酬差距积累。研究显示同样的谈判行为，女性被评价为'不好共事'的概率比男性高5.5倍。",
     source: "Hannah Riley Bowles, Harvard Kennedy School研究；《看不见的女性》第9章"
   },
   {
-    trigger_keywords: ["痛经","月经","经期","生理期","正常吗"],
+    title: "女性疼痛与经期症状被低估",
+    trigger_keywords: ["痛经","月经","经期","生理期","正常吗","腹痛","疼痛","忍一忍","内异症","子宫内膜异位","妇科","月经痛"],
     female_specific_info: "痛经疼痛被证实与心脏病发作疼痛等级相当，但长期被医疗系统低估。研究显示女性疼痛平均等待被认真对待的时间比男性长16分钟。许多女性在就医时描述疼痛会被建议'吃止痛药休息'而非进行系统检查。",
     source: "《看不见的女性》；Journal of Pain研究"
+  },
+  {
+    title: "性别数据缺口与AI默认值",
+    trigger_keywords: ["性别数据缺口","gender data gap","数据缺口","ai偏见","人工智能","默认男性","女性数据","训练数据","公共政策","产品设计","公共空间"],
+    female_specific_info: "性别数据缺口指医学、产品、交通、职场和公共政策中长期缺少按性别拆分的数据，导致所谓'中性'设计经常默认男性身体和男性经验。AI 如果直接继承全量互联网数据，也会放大这种默认值。",
+    source: "UN Women / Data2X 性别数据缺口报告；《看不见的女性》"
   }
 ];
 
@@ -1282,17 +1293,27 @@ function showLoading() {
 
 function removeLoading() { const el = document.getElementById('loadingMsg'); if (el) el.remove(); }
 
+function scoreKnowledgeEntry(msg, entry) {
+  const normalized = msg.toLowerCase();
+  let score = 0;
+  for (const kw of entry.trigger_keywords) {
+    if (normalized.includes(String(kw).toLowerCase())) score += Math.max(1, Math.min(4, String(kw).length / 2));
+  }
+  return score;
+}
+
 function retrieveKnowledge(msg) {
   const matched = [];
   for (const e of KNOWLEDGE_BASE) {
-    for (const kw of e.trigger_keywords) {
-      if (msg.includes(kw)) { matched.push(e); break; }
-    }
+    const score = scoreKnowledgeEntry(msg, e);
+    if (score > 0) matched.push({ ...e, score });
   }
   if (!matched.length) return { context: '', source: '' };
+  matched.sort((a, b) => b.score - a.score);
+  const top = matched.slice(0, 3);
   return {
-    context: matched.map(m => `【女性特别提示】${m.female_specific_info}`).join('\n\n'),
-    source: matched.map(m => m.source).join('；')
+    context: top.map(m => `【${m.title}】${m.female_specific_info}\n来源：${m.source}`).join('\n\n'),
+    source: [...new Set(top.map(m => m.source))].join('；')
   };
 }
 
@@ -1324,7 +1345,7 @@ function cleanReply(text) {
 function staticKnowledgeReply(message, knowledgeContext) {
   const lower = message.toLowerCase();
   if (knowledgeContext) {
-    return cleanReply(`${knowledgeContext.replace(/【女性特别提示】/g, '')}\n\n建议你把它当作一个需要被认真对待的信号：如果症状明显、持续、反复出现，优先寻求医生或专业机构帮助。参考资料来自 Bloom 当前知识库。`);
+    return cleanReply(`${knowledgeContext}\n\n建议你把它当作一个需要被认真对待的信号：如果症状明显、持续、反复出现，优先寻求医生或专业机构帮助。以上来自 Bloom 当前资料索引。`);
   }
   if (lower.includes('知识库') || lower.includes('书') || lower.includes('来源')) {
     return 'Bloom 当前知识库包括《看不见的女性》《制造误诊》、AHA/WHO 女性心血管资料、FDA 药物性别差异研究、UN Women/Data2X 性别数据缺口报告，并补充交通安全和职场性别研究。';
