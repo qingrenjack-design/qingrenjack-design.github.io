@@ -1,6 +1,6 @@
-# Payson Tong Portfolio
+# Bloom
 
-Personal portfolio and HKUST InnoBay Summer Camp 2026 application page.
+She Code Lab hackathon demo: a voice-first AI companion grounded in a female-perspective knowledge base.
 
 Public site:
 
