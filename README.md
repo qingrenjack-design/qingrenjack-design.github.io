@@ -1,6 +1,7 @@
-# Payson Tong Portfolio
+# Payson Tong — Personal Site
 
-Personal portfolio and HKUST InnoBay Summer Camp 2026 application page.
+Personal portfolio for Payson Tong: consumer business, hardware development,
+software products, and venture building.
 
 Public site:
 

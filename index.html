@@ -1,279 +1,216 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Payson Tong | InnoBay 2026 Portfolio</title>
-    <meta name="description" content="InnoBay 2026 application portfolio for Payson Tong, a product builder working across sports retail, cycling operations, embedded hardware, and AI-assisted devices.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#11110f">
+    <title>童培新 Payson Tong — 产品、硬件与品牌</title>
+    <meta name="description" content="童培新的个人主页：从消费品经营与社群运营，到软硬件开发，再到创造自己的品牌产品。">
+    <meta property="og:title" content="童培新 Payson Tong — Product Builder">
+    <meta property="og:description" content="理解消费者，进入制造现场，做自己的产品。">
+    <meta property="og:image" content="assets/images/hero-builders.jpg">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header" data-reveal>
-      <a class="brand" href="#top" aria-label="Back to top">
-        <span>童培新</span>
-        <span>Payson Tong</span>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <strong>童培新</strong><span>Payson Tong</span>
       </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#skills">Skills</a>
-        <a href="#cv">CV</a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#path">路径</a>
+        <a href="#work">项目</a>
+        <a href="#about">关于</a>
       </nav>
+      <a class="contact-link" href="mailto:qingrenjack@gmail.com">联系我 <span>↗</span></a>
     </header>
 
-    <main id="top">
-      <section class="hero section-grid">
+    <main id="main">
+      <section class="hero" id="top">
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow">HKUST InnoBay Summer Camp 2026 · Sports Technology</p>
-          <h1>从运动消费场景出发，做真正属于自己的科技产品。</h1>
-          <p class="lead">
-            Civil Engineering / Embedded Software Engineering learner, founder, and hardware product builder.
-            I connect sports retail, cycling operations, embedded prototyping, and AI software into practical product experiments.
-          </p>
+          <p class="eyebrow"><span></span> Product builder · Shenzhen</p>
+          <h1>从卖好产品，<br>到造自己的产品。</h1>
+          <p class="hero-intro">我是童培新，XbotPark 在孵项目联创。我的工作横跨消费品牌、硬件原型与软件产品——从真实场景出发，把想法做成能被人使用的东西。</p>
           <div class="hero-actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="#cv">Quick CV</a>
+            <a class="button button-light" href="#work">查看项目</a>
+            <a class="text-link" href="#path">认识我的路径 <span>↓</span></a>
           </div>
         </div>
-        <figure class="hero-media" data-reveal>
-          <img src="assets/images/application-desk.jpg" alt="Desk setup showing InnoBay application and hardware workspace">
-          <figcaption>Application workspace · Shenzhen / Jiangsu / Hong Kong direction</figcaption>
+
+        <figure class="hero-visual" data-reveal>
+          <img src="assets/images/hero-builders.jpg" alt="马斯克早年工作照、童培新嵌入式开发工作照与黄仁勋早年 NVIDIA 工作照组成的拼贴">
+          <figcaption>BUILDER, THEN & NOW <span>一张关于工程师精神的个人拼贴</span></figcaption>
         </figure>
-      </section>
 
-      <section class="statement" data-reveal>
-        <p class="section-kicker">Application Fit</p>
-        <h2>Why InnoBay</h2>
-        <div class="statement-grid">
-          <p>
-            我从运动鞋和骑行零售开始接触运动消费，随后经营自行车店和骑行驿站，长期观察真实用户如何选择、维护和使用运动装备。
-          </p>
-          <p>
-            现在我希望从“销售已有产品”转向“定义并制造自己的产品”。InnoBay 的 Sports Technology 主题，正好连接我的运动场景经验、机械结构训练和软硬件原型能力。
-          </p>
-        </div>
-      </section>
-
-      <section id="projects" class="projects">
-        <div class="section-heading" data-reveal>
-          <p class="section-kicker">Selected Work</p>
-          <h2>Projects / 产品与经历</h2>
-          <p>Each block is written as a product case: problem, context, execution, and learning.</p>
-        </div>
-
-        <article class="project project-feature" data-reveal>
-          <div class="project-copy">
-            <p class="project-index">01 · AI Wearable</p>
-            <h3>Memory Pendant · 可穿戴式记忆项链</h3>
-            <p>
-              A wearable AI recorder prototype that combines continuous audio capture, mobile notes,
-              and model-assisted memory retrieval. 这个项目来自我自己的真实痛点：很多日常要点会被快速遗忘，
-              但传统便签又太依赖主动记录。
-            </p>
-            <dl class="project-facts">
-              <div>
-                <dt>Role</dt>
-                <dd>Product concept, embedded prototype, app flow, 3D printed enclosure</dd>
-              </div>
-              <div>
-                <dt>Focus</dt>
-                <dd>Personal memory timeline, daily diary generation, privacy-aware UX</dd>
-              </div>
-              <div>
-                <dt>Next</dt>
-                <dd>Battery life, consent experience, smaller enclosure, on-device workflow</dd>
-              </div>
-            </dl>
-          </div>
-          <div class="media-pair">
-            <img src="assets/images/memory-app.jpg" alt="Mobile app prototype showing a memory timeline interface">
-            <img src="assets/images/memory-hardware.jpg" alt="Open wearable pendant hardware prototype with battery and development board">
-          </div>
-        </article>
-
-        <article class="project project-split" data-reveal>
-          <figure>
-            <img src="assets/images/cycling-store.jpg" alt="Exterior of the cycling store founded and operated by Payson Tong">
-          </figure>
-          <div class="project-copy">
-            <p class="project-index">02 · Cycling Operation</p>
-            <h3>Cycling Store & Rider Hub · 自行车店与骑行驿站</h3>
-            <p>
-              I founded and operated a cycling store after noticing demand for lightweight bicycles,
-              maintenance service, and community-based riding experiences. 这段经历让我直接接触骑行用户、
-              装备维护、门店运营和运动场景中的真实痛点。
-            </p>
-            <ul class="compact-list">
-              <li>2023.07 - 2025.09 took academic leave to operate full-time</li>
-              <li>Built daily retail, service, and rider community workflows</li>
-              <li>Currently delegated to a capable store manager while I returned to university</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project project-split reverse" data-reveal>
-          <figure>
-            <img src="assets/images/sram-training.jpg" alt="SRAM bicycle mechanical training group photo">
-          </figure>
-          <div class="project-copy">
-            <p class="project-index">02B · Mechanical Training</p>
-            <h3>SRAM Level B Course · 自行车机械结构训练</h3>
-            <p>
-              To move beyond sales and understand product structure, I completed SRAM Level B training
-              through Yunpeng Technology Center. The training strengthened my mechanical intuition for
-              drivetrain systems, wheels, service logic, and product reliability.
-            </p>
-            <div class="inline-proof">
-              <img src="assets/images/sram-certificate.jpg" alt="Yunpeng SRAM Level B certificate of completion">
-              <span>Certificate of Completion · 2025.02.27</span>
-            </div>
-          </div>
-        </article>
-
-        <article class="project project-split" data-reveal>
-          <figure>
-            <img src="assets/images/grc-store.jpg" alt="GRC cycling store and rider community scene">
-          </figure>
-          <div class="project-copy">
-            <p class="project-index">03 · Sports Consumer Venture</p>
-            <h3>Sneaker & Sports Brand Retail · 运动品牌经销</h3>
-            <p>
-              My first venture began in sports retail, representing brands including Puma, Adidas,
-              and Under Armour while studying at university. 这段经历训练了我对运动消费、渠道、库存周转、
-              用户偏好和线上内容的理解。
-            </p>
-            <p>
-              The bottleneck was also clear: sneakers and bicycles were still other companies' products.
-              As a dealer, I could optimize sales and service, but I could not define the product itself.
-              This is why I am now shifting toward building my own hardware and software products.
-            </p>
-            <figure class="receipt-proof">
-              <img src="assets/images/sneaker-settlement.jpg" alt="Sports retail settlement record screenshot">
-              <figcaption>Settlement record sample, used only as operational proof.</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <article class="project project-feature maker" data-reveal>
-          <div class="project-copy">
-            <p class="project-index">04 · Development & Hardware Exploration</p>
-            <h3>Hardware Exploration · 创客、硬件展与黑客松</h3>
-            <p>
-              I actively joined maker communities and hardware events in Shenzhen, including Chaihuo
-              Makers and Seeed Studio / Hugging Face activities. These experiences helped me connect
-              software engineering, embedded hardware, AI tooling, and product prototyping culture.
-            </p>
-            <p>
-              这也是我频繁前往深圳的原因：我希望更靠近硬件供应链、创客社区和真实产品团队。
-            </p>
-          </div>
-          <div class="media-pair">
-            <img src="assets/images/chaichuo-maker.jpg" alt="Group photo at Chaihuo Makers in Shenzhen">
-            <img src="assets/images/seeed-hf.jpg" alt="Group photo at Seeed Studio and Hugging Face hardware event">
-          </div>
-        </article>
-
-        <article class="project project-text" data-reveal>
-          <div class="project-copy">
-            <p class="project-index">04B · Personal Tool Prototype</p>
-            <h3>AI Agent Keyboard · 带屏幕的键盘</h3>
-            <p>
-              A wooden-shell keyboard prototype with a small display, designed as a companion screen
-              for running multiple AI agents in parallel. The keyboard works with my own fast window
-              splitting workflow to reduce main-screen congestion. 细节暂不公开，但它体现了我从自己的工作流痛点出发，
-              设计实体工具的能力。
-            </p>
-          </div>
-        </article>
-      </section>
-
-      <section id="timeline" class="timeline-section" data-reveal>
-        <div class="section-heading">
-          <p class="section-kicker">Path</p>
-          <h2>Timeline / 时间线</h2>
-        </div>
-        <ol class="timeline">
-          <li>
-            <time>2020</time>
-            <span>Entered Jiangsu University of Science and Technology, Civil Engineering / Embedded Software Engineering. Started sports sneaker media and retail venture during freshman year.</span>
-          </li>
-          <li>
-            <time>2021 - 2022</time>
-            <span>Operated sports retail while studying; learned online marketing, inventory turnover, and customer demand in athletic products.</span>
-          </li>
-          <li>
-            <time>2023.07 - 2025.09</time>
-            <span>Took academic leave and operated cycling store / rider hub full-time. Later delegated daily operations and returned to junior-year study.</span>
-          </li>
-          <li>
-            <time>2025 - 2026</time>
-            <span>Shifted focus toward embedded software engineering, AI hardware prototypes, and maker community learning in Shenzhen.</span>
-          </li>
+        <ol class="hero-manifesto" aria-label="个人主页的三个方向" data-reveal>
+          <li><b>01</b><span>消费品<br>及其销售</span></li>
+          <li><b>02</b><span>硬件<br>开发</span></li>
+          <li><b>03</b><span>自己的<br>品牌产品</span></li>
         </ol>
       </section>
 
-      <section id="skills" class="skills" data-reveal>
-        <div class="section-heading">
-          <p class="section-kicker">Capabilities</p>
-          <h2>Skills / 能力模块</h2>
+      <section class="status-strip" aria-label="当前身份">
+        <p><span class="pulse"></span> NOW</p>
+        <p>XbotPark 在孵项目联创</p>
+        <p>Consumer × Hardware × Software</p>
+        <p>Shenzhen, China</p>
+      </section>
+
+      <section class="path section" id="path">
+        <div class="section-title" data-reveal>
+          <p class="kicker">01 / MY PATH</p>
+          <h2>一条从市场走向制造的路。</h2>
+          <p>我不是先有一个技术，再寻找使用场景。我的起点一直是人：他们喜欢什么、为什么购买、又为什么放弃使用。</p>
         </div>
-        <div class="skill-grid">
-          <div>
-            <h3>Product & Business</h3>
-            <p>Retail operations, sports consumer insight, user research, inventory and service workflow, community building.</p>
-          </div>
-          <div>
-            <h3>Hardware & Mechanical</h3>
-            <p>Embedded prototyping, 3D printed enclosure, bicycle drivetrain/service knowledge, rapid physical iteration.</p>
-          </div>
-          <div>
-            <h3>Software & AI</h3>
-            <p>Mobile app concepting, AI-assisted retrieval, multi-agent workflow design, fast desktop productivity tooling.</p>
-          </div>
-          <div>
-            <h3>Communication</h3>
-            <p>Chinese / English mixed presentation, founder storytelling, demo-oriented product explanation.</p>
-          </div>
+        <div class="path-grid">
+          <article class="path-card" data-reveal>
+            <p class="path-number">01</p>
+            <h3>理解消费者</h3>
+            <p>从球鞋、运动品牌经销，到自行车门店和骑行社群。我在一线理解用户、渠道、库存、服务与社区。</p>
+            <span>Consumer & Community</span>
+          </article>
+          <article class="path-card active" data-reveal>
+            <p class="path-number">02</p>
+            <h3>进入制造现场</h3>
+            <p>嵌入式开发、3D 打印、机械结构与快速原型。把用户问题翻译成可以测试的实体和交互。</p>
+            <span>Hardware & Prototyping</span>
+          </article>
+          <article class="path-card" data-reveal>
+            <p class="path-number">03</p>
+            <h3>定义自己的产品</h3>
+            <p>现在，我把消费洞察与软硬件能力放进同一个系统，参与打造真正属于团队自己的品牌产品。</p>
+            <span>Brand & Product</span>
+          </article>
         </div>
       </section>
 
-      <section id="cv" class="cv section-grid" data-reveal>
-        <div>
-          <p class="section-kicker">Quick CV</p>
-          <h2>Payson Tong · 童培新</h2>
-          <p>
-            Undergraduate student at Jiangsu University of Science and Technology, studying Civil Engineering /
-            Embedded Software Engineering, with self-directed work in software and embedded systems.
-          </p>
-          <p>
-            Current direction: sports technology, AI hardware, wearable devices, and product design grounded in real operating experience.
-          </p>
+      <section class="work section" id="work">
+        <div class="work-heading" data-reveal>
+          <div>
+            <p class="kicker">02 / SELECTED WORK</p>
+            <h2>项目不是清单，<br>是能力如何长出来。</h2>
+          </div>
+          <div class="filters" role="group" aria-label="筛选项目">
+            <button class="filter is-active" data-filter="all">全部</button>
+            <button class="filter" data-filter="consumer">消费与品牌</button>
+            <button class="filter" data-filter="hardware">硬件</button>
+            <button class="filter" data-filter="software">软件</button>
+          </div>
         </div>
-        <aside class="cv-card">
-          <dl>
-            <div>
-              <dt>Education</dt>
-              <dd>Jiangsu University of Science and Technology · Civil Engineering / Embedded Software Engineering</dd>
+
+        <div class="project-grid">
+          <article class="project-card project-wide" data-category="consumer" data-reveal>
+            <div class="project-image image-collage">
+              <img src="assets/images/cycling-store.jpg" alt="童培新经营的自行车门店">
+              <img src="assets/images/grc-store.jpg" alt="自行车门店与骑行社群活动现场">
             </div>
-            <div>
-              <dt>Application</dt>
-              <dd>HKUST InnoBay Summer Camp 2026 · Sports Technology</dd>
+            <div class="project-copy">
+              <div class="project-meta"><span>CONSUMER / OPERATION</span><span>2021—2025</span></div>
+              <h3>球鞋、自行车与社群</h3>
+              <p>从运动品牌渠道经营，到创办自行车门店与骑行驿站。长期的一线运营让我学会的不只是“卖东西”，而是识别需求、组织服务，并让品牌与真实的人建立关系。</p>
+              <ul class="tags"><li>零售运营</li><li>品牌经销</li><li>社群活动</li><li>用户洞察</li></ul>
             </div>
-            <div>
-              <dt>Contact</dt>
-              <dd><a href="mailto:qingrenjack@gmail.com">qingrenjack@gmail.com</a></dd>
+          </article>
+
+          <article class="project-card" data-category="hardware software" data-reveal>
+            <div class="project-image"><img src="assets/images/memory-hardware.jpg" alt="AI 记忆项链硬件原型"></div>
+            <div class="project-copy">
+              <div class="project-meta"><span>AI HARDWARE</span><span>PROTOTYPE</span></div>
+              <h3>AI 记忆项链</h3>
+              <p>从自己的遗忘痛点出发，完成持续记录、记忆时间线、AI 检索与 3D 打印外壳的软硬件原型。</p>
+              <ul class="tags"><li>Embedded</li><li>AI</li><li>3D Print</li></ul>
             </div>
+          </article>
+
+          <article class="project-card project-dark" data-category="software" data-reveal>
+            <div class="project-image"><img src="assets/images/poetry-camera.jpg" alt="诗歌相机产品海报与界面"></div>
+            <div class="project-copy">
+              <div class="project-meta"><span>AI SOFTWARE</span><span>LIVE DEMO</span></div>
+              <h3>诗歌相机</h3>
+              <p>按下快门，AI 读取当下的画面与情绪，把一个普通瞬间写成一首诗。一次关于“生成式 AI 如何更有人味”的产品实验。</p>
+              <ul class="tags"><li>Product Design</li><li>Vision AI</li><li>Web</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card project-wide" data-category="consumer" data-reveal>
+            <div class="project-image product-stage"><img src="assets/images/consumer-product.jpg" alt="消费品销售与选品实践中的商品陈列"></div>
+            <div class="project-copy">
+              <div class="project-meta"><span>CONSUMER BUSINESS</span><span>EARLY PRACTICE</span></div>
+              <h3>从选品与销售，理解品牌</h3>
+              <p>消费品实践训练了我对包装、价格、渠道、复购与用户信任的敏感度。它也让我更坚定：下一阶段不只做优秀产品的销售者，而要参与产品定义与品牌创造。</p>
+              <ul class="tags"><li>选品</li><li>渠道</li><li>销售转化</li><li>品牌表达</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="hardware" data-reveal>
+            <div class="project-image"><img src="assets/images/prototype-armor.jpg" alt="大型装甲造型实体制作项目"></div>
+            <div class="project-copy">
+              <div class="project-meta"><span>PHYSICAL BUILD</span><span>MAKING</span></div>
+              <h3>实体制作与结构直觉</h3>
+              <p>持续通过拆解、制作和快速迭代训练手感。好的硬件不只存在于 CAD 里，它必须经得起装配、触摸与真实使用。</p>
+              <ul class="tags"><li>Fabrication</li><li>Structure</li><li>Iteration</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card project-nda" data-category="hardware" data-reveal>
+            <div class="nda-visual"><span>NDA</span><i></i><i></i><i></i></div>
+            <div class="project-copy">
+              <div class="project-meta"><span>HARDWARE PRODUCT</span><span>IN DEVELOPMENT</span></div>
+              <h3>新型外设设备</h3>
+              <p>面向真实工作流的新型外设产品。目前处于 NDA 阶段，负责产品定义、交互验证与软硬件协同。</p>
+              <ul class="tags"><li>外设</li><li>HCI</li><li>Prototype</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card project-nda" data-category="hardware" data-reveal>
+            <div class="nda-visual print"><span>NDA</span><i></i><i></i><i></i></div>
+            <div class="project-copy">
+              <div class="project-meta"><span>3D PRINTING</span><span>IN DEVELOPMENT</span></div>
+              <h3>3D 打印方向产品</h3>
+              <p>围绕桌面制造与 3D 打印体验的新产品探索。目前处于 NDA 阶段，公开信息仅限产品方向。</p>
+              <ul class="tags"><li>Additive Manufacturing</li><li>UX</li><li>Hardware</li></ul>
+            </div>
+          </article>
+
+          <article class="project-card project-text-card" data-category="software" data-reveal>
+            <div class="project-copy">
+              <div class="project-meta"><span>SOFTWARE LAB</span><span>ONGOING</span></div>
+              <h3>软件不是配套，<br>是产品的一半。</h3>
+              <p>除诗歌相机外，我还持续构建 AI Agent 竞技场 Mettle、语音交互工具、记忆时间线与多任务桌面工作流。软件让硬件拥有长期演进的能力。</p>
+              <a class="card-link" href="https://mettle-novica-ai.vercel.app/arena" target="_blank" rel="noreferrer">查看 Mettle Arena <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about-image" data-reveal>
+          <img src="assets/images/seeed-hf.jpg" alt="童培新参加 Seeed Studio 与 Hugging Face 硬件活动">
+          <span>在深圳的硬件与开源社区中持续学习</span>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p class="kicker">03 / ABOUT</p>
+          <h2>创业者的角色，<br>是让不同世界合作。</h2>
+          <p class="about-lead">我能听懂消费者的语言，也愿意钻进工程细节。曾经的零售与门店经历让我尊重现金流、交付和服务；嵌入式、软件与原型训练让我能把问题变成产品。</p>
+          <dl class="about-facts">
+            <div><dt>Current</dt><dd>XbotPark 在孵项目联创</dd></div>
+            <div><dt>Background</dt><dd>江苏科技大学 · 土木工程 / 嵌入式软件工程</dd></div>
+            <div><dt>Focus</dt><dd>消费科技、AI 硬件、桌面制造、品牌产品</dd></div>
           </dl>
-        </aside>
+          <a class="button button-dark" href="mailto:qingrenjack@gmail.com">聊一个产品想法 ↗</a>
+        </div>
+      </section>
+
+      <section class="closing">
+        <p data-reveal>Understand people.<br>Build the thing.<br><em>Own the product.</em></p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Built for HKUST InnoBay Summer Camp 2026. 中英混合版本，适合直接作为申请 CV link。</p>
-      <a href="#top">Back to top</a>
+      <div><strong>童培新</strong><span>Payson Tong</span></div>
+      <p>Product builder based in Shenzhen.</p>
+      <a href="mailto:qingrenjack@gmail.com">qingrenjack@gmail.com</a>
+      <a href="#top">回到顶部 ↑</a>
     </footer>
 
     <script src="script.js"></script>
