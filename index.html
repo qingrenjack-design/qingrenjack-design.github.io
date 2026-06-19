@@ -3,142 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f2efe7">
+  <meta name="theme-color" content="#0b0c0a">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <title>童培新 Payson Tong — Product Builder</title>
   <meta name="description" content="童培新的个人主页：消费品牌、硬件开发、软件产品与创业实践。">
   <meta property="og:image" content="assets/images/hero-builders.jpg">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="payson-v4.css">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到正文</a>
+
   <header class="site-header">
-    <a class="brand" href="#home"><strong>童培新</strong><span>Payson Tong</span></a>
+    <a class="brand" href="#home"><b>童培新</b><span>Payson Tong</span></a>
     <nav aria-label="主导航">
-      <a href="#home">首页</a>
-      <a href="#work">项目</a>
-      <a href="#profile">关于</a>
+      <a href="#home">01 首页</a>
+      <a href="#work">02 项目</a>
+      <a href="#about">03 关于</a>
     </nav>
-    <a class="mail-link" href="mailto:qingrenjack@gmail.com">联系我 ↗</a>
+    <a class="header-contact" href="mailto:qingrenjack@gmail.com"><i></i> AVAILABLE FOR IDEAS</a>
   </header>
 
   <main id="main">
-    <section class="screen hero" id="home">
+    <section class="panel hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
       <div class="hero-copy" data-reveal>
-        <p class="eyebrow"><i></i> XbotPark 在孵项目联创</p>
-        <h1>从理解消费，<br>到创造产品。</h1>
-        <p class="intro">我是童培新，一个从零售与社群走进软硬件开发的产品创业者。我关心真实需求，也享受把想法做成可以被触摸、使用和购买的东西。</p>
-        <div class="hero-actions">
-          <a class="primary-action" href="#work">浏览项目 <span>↓</span></a>
-          <a class="secondary-action" href="mailto:qingrenjack@gmail.com">聊聊合作</a>
-        </div>
+        <p class="kicker"><span>SHENZHEN</span> PRODUCT BUILDER / FOUNDER</p>
+        <h1>在市场里<br><em>发现问题，</em><br>在车间里<br>把它做出来。</h1>
+        <p class="hero-note">童培新，XbotPark 在孵项目联创。<br>从消费与社群出发，走进软硬件与品牌创造。</p>
       </div>
 
-      <figure class="hero-image" data-reveal>
-        <img src="assets/images/hero-builders.jpg" alt="马斯克早年工作照、童培新嵌入式开发工作照与黄仁勋早年 NVIDIA 工作照组成的工程师精神拼贴">
-        <figcaption><b>BUILDER, THEN & NOW</b><span>一张关于工程师精神的个人拼贴</span></figcaption>
-      </figure>
+      <div class="visual-stage" data-reveal>
+        <figure class="hero-photo">
+          <img src="assets/images/hero-builders.jpg" alt="马斯克早年工作照、童培新嵌入式开发工作照与黄仁勋早年 NVIDIA 工作照组成的工程师精神拼贴">
+          <figcaption><b>BUILDER, THEN & NOW</b><span>工程师精神的个人拼贴，而非真实合影</span></figcaption>
+        </figure>
+        <figure class="float-photo float-bike">
+          <img src="assets/images/cycling-store.jpg" alt="童培新经营的自行车门店">
+          <figcaption>OPERATOR / 2023</figcaption>
+        </figure>
+        <figure class="float-photo float-device">
+          <img src="assets/images/memory-hardware.jpg" alt="AI 记忆项链硬件原型">
+          <figcaption>MAKER / NOW</figcaption>
+        </figure>
+        <p class="stage-label">CONSUMER → HARDWARE → OWN PRODUCT</p>
+      </div>
 
-      <div class="focus-bar" data-reveal>
-        <div><b>01</b><span>消费品<br>及其销售</span></div>
-        <div><b>02</b><span>硬件<br>开发</span></div>
-        <div><b>03</b><span>自己的<br>品牌产品</span></div>
+      <div class="hero-bottom" data-reveal>
+        <a class="round-link" href="#work"><span>看项目</span><b>↓</b></a>
+        <ol>
+          <li><b>01</b><span>消费品及其销售</span></li>
+          <li><b>02</b><span>硬件与软件开发</span></li>
+          <li><b>03</b><span>自己的品牌产品</span></li>
+        </ol>
       </div>
     </section>
 
-    <section class="screen work" id="work">
-      <header class="section-header" data-reveal>
-        <div><p class="section-index">02 / SELECTED WORK</p><h2>做过的事，组成现在的我。</h2></div>
-        <div class="filters" aria-label="项目筛选">
-          <button class="filter is-active" data-filter="all" aria-pressed="true">全部</button>
-          <button class="filter" data-filter="consumer" aria-pressed="false">消费</button>
-          <button class="filter" data-filter="hardware" aria-pressed="false">硬件</button>
-          <button class="filter" data-filter="software" aria-pressed="false">软件</button>
+    <section class="panel projects" id="work">
+      <header class="projects-head" data-reveal>
+        <div><p class="section-tag">02 / SELECTED WORK</p><h2>不是作品列表，<br><em>是一条成长路径。</em></h2></div>
+        <div class="project-controls">
+          <p>拖动或点击箭头浏览<br>点击卡片查看细节</p>
+          <button class="track-arrow prev" aria-label="上一组项目">←</button>
+          <button class="track-arrow next" aria-label="下一组项目">→</button>
         </div>
       </header>
 
-      <div class="project-grid" data-reveal>
-        <button class="project-card card-cycle" data-category="consumer" data-detail="cycle" aria-label="查看自行车门店与骑行社群项目详情">
-          <img src="assets/images/cycling-store.jpg" alt="自行车门店">
-          <span class="card-shade"></span>
-          <span class="card-number">01</span>
-          <span class="card-copy"><small>CONSUMER · OPERATION</small><strong>自行车门店<br>与骑行社群</strong></span>
-          <span class="card-open">↗</span>
-        </button>
+      <div class="project-viewport" data-reveal>
+        <div class="project-track">
+          <button class="project-card theme-red" data-detail="retail" aria-label="查看球鞋与运动品牌项目">
+            <span class="project-index">01</span>
+            <span class="project-image"><img src="assets/images/grc-store.jpg" alt="运动品牌与骑行消费场景"></span>
+            <span class="project-body"><small>CONSUMER / BRAND</small><strong>球鞋与<br>运动品牌</strong><span>渠道 · 选品 · 销售</span></span>
+            <i>↗</i>
+          </button>
 
-        <button class="project-card card-retail" data-category="consumer" data-detail="retail" aria-label="查看运动品牌零售项目详情">
-          <img src="assets/images/grc-store.jpg" alt="运动与骑行消费场景">
-          <span class="card-shade"></span>
-          <span class="card-number">02</span>
-          <span class="card-copy"><small>BRAND · RETAIL</small><strong>球鞋与<br>运动品牌</strong></span>
-          <span class="card-open">↗</span>
-        </button>
+          <button class="project-card card-tall" data-detail="cycle" aria-label="查看自行车门店与骑行社群项目">
+            <span class="project-index">02</span>
+            <span class="project-image"><img src="assets/images/cycling-store.jpg" alt="童培新经营的自行车门店"></span>
+            <span class="project-body"><small>OPERATION / COMMUNITY</small><strong>自行车门店<br>与骑行社群</strong><span>门店 · 服务 · 社群</span></span>
+            <i>↗</i>
+          </button>
 
-        <button class="project-card card-memory" data-category="hardware software" data-detail="memory" aria-label="查看 AI 记忆项链项目详情">
-          <img src="assets/images/memory-hardware.jpg" alt="AI 记忆项链硬件原型">
-          <span class="card-shade"></span>
-          <span class="card-number">03</span>
-          <span class="card-copy"><small>AI · HARDWARE</small><strong>AI<br>记忆项链</strong></span>
-          <span class="card-open">↗</span>
-        </button>
+          <button class="project-card theme-lime" data-detail="memory" aria-label="查看 AI 记忆项链项目">
+            <span class="project-index">03</span>
+            <span class="project-image"><img src="assets/images/memory-hardware.jpg" alt="AI 记忆项链硬件原型"></span>
+            <span class="project-body"><small>AI / HARDWARE</small><strong>AI<br>记忆项链</strong><span>嵌入式 · App · 3D 打印</span></span>
+            <i>↗</i>
+          </button>
 
-        <button class="project-card card-poetry" data-category="software" data-detail="poetry" aria-label="查看诗歌相机项目详情">
-          <img src="assets/images/poetry-camera.jpg" alt="诗歌相机产品海报">
-          <span class="card-shade"></span>
-          <span class="card-number">04</span>
-          <span class="card-copy"><small>VISION AI · WEB</small><strong>诗歌<br>相机</strong></span>
-          <span class="card-open">↗</span>
-        </button>
+          <button class="project-card card-tall theme-blue" data-detail="poetry" aria-label="查看诗歌相机项目">
+            <span class="project-index">04</span>
+            <span class="project-image"><img src="assets/images/poetry-camera.jpg" alt="诗歌相机产品海报"></span>
+            <span class="project-body"><small>VISION AI / SOFTWARE</small><strong>诗歌<br>相机</strong><span>一按下，当下即化诗</span></span>
+            <i>↗</i>
+          </button>
 
-        <button class="project-card card-nda" data-category="hardware" data-detail="nda" aria-label="查看 NDA 硬件项目概览">
-          <span class="nda-art"><i></i><i></i><i></i></span>
-          <span class="card-number">05</span>
-          <span class="card-copy"><small>HARDWARE · IN DEVELOPMENT</small><strong>NDA<br>双项目</strong></span>
-          <span class="card-open">↗</span>
-        </button>
+          <button class="project-card nda-card" data-detail="nda" aria-label="查看 NDA 硬件产品概览">
+            <span class="project-index">05</span>
+            <span class="nda-orbit"><b>NDA</b><i></i><i></i></span>
+            <span class="project-body"><small>IN DEVELOPMENT</small><strong>硬件<br>双项目</strong><span>新型外设 · 3D 打印产品</span></span>
+            <i>↗</i>
+          </button>
 
-        <button class="project-card card-lab" data-category="software" data-detail="lab" aria-label="查看软件实验室项目详情">
-          <span class="lab-mark">{ }</span>
-          <span class="card-number">06</span>
-          <span class="card-copy"><small>SOFTWARE · AGENT</small><strong>软件<br>实验室</strong></span>
-          <span class="card-open">↗</span>
-        </button>
+          <button class="project-card card-tall lab-card" data-detail="lab" aria-label="查看软件实验室项目">
+            <span class="project-index">06</span>
+            <span class="code-art">&lt;/&gt;</span>
+            <span class="project-body"><small>SOFTWARE / AGENT</small><strong>软件<br>实验室</strong><span>Mettle · Voice · Workflow</span></span>
+            <i>↗</i>
+          </button>
+        </div>
       </div>
-      <p class="work-hint">点击卡片查看详情，不需要继续向下翻。</p>
     </section>
 
-    <section class="screen profile" id="profile">
-      <div class="profile-intro" data-reveal>
-        <p class="section-index">03 / PROFILE</p>
-        <h2>让市场、工程与品牌在同一张桌上工作。</h2>
-        <p>我的优势不是某个单点技能，而是能从用户与生意出发，进入工程细节，再把技术重新组织成清晰的产品。</p>
-        <a class="primary-action dark" href="mailto:qingrenjack@gmail.com">聊一个产品想法 <span>↗</span></a>
+    <section class="panel about" id="about">
+      <div class="about-statement" data-reveal>
+        <p class="section-tag">03 / ABOUT PAYSON</p>
+        <h2>我能听懂消费者的语言，<br>也愿意钻进工程细节。</h2>
+        <p>创业者的价值，是让市场、工程与品牌在同一张桌上工作。</p>
+        <button class="resume-open">查看完整履历与能力 <span>↗</span></button>
       </div>
 
-      <div class="journey" data-reveal>
-        <article><time>2021—23</time><div><b>消费与渠道</b><p>运动品牌经销、选品、内容与销售。</p></div></article>
-        <article><time>2023—25</time><div><b>门店与社群</b><p>自行车门店、服务流程与骑行活动。</p></div></article>
-        <article><time>2025—NOW</time><div><b>产品与创业</b><p>嵌入式、AI 软件、硬件原型与品牌产品。</p></div></article>
+      <div class="route" data-reveal>
+        <div class="route-line"><span></span></div>
+        <article><b>01</b><time>2020—至今</time><h3>江苏科技大学</h3><p>土木工程 / 嵌入式软件工程。</p></article>
+        <article><b>02</b><time>2021—2023</time><h3>消费品渠道</h3><p>消费品电商渠道运营。</p></article>
+        <article><b>03</b><time>2023—至今</time><h3>自行车门店</h3><p>门店经营、骑行驿站与社群。</p></article>
+        <article><b>04</b><time>2025.12—至今</time><h3>柴火创客空间</h3><p>IoT、ReSpeaker 与 Rebot。</p></article>
+        <article><b>05</b><time>2026.02—至今</time><h3>产品与黑客松</h3><p>磁吸打印夹爪与 Mettle。</p></article>
       </div>
 
-      <div class="profile-mosaic" data-reveal>
-        <figure class="mosaic-main"><img src="assets/images/seeed-hf.jpg" alt="参加 Seeed Studio 与 Hugging Face 硬件活动"><figcaption>Shenzhen Maker Community</figcaption></figure>
+      <div class="about-gallery" data-reveal>
+        <figure class="gallery-main"><img src="assets/images/seeed-hf.jpg" alt="参加 Seeed Studio 与 Hugging Face 硬件活动"><figcaption>SHENZHEN MAKER COMMUNITY</figcaption></figure>
+        <figure class="portrait-frame"><img src="assets/images/profile-headshot.jpg" alt="童培新个人照片"></figure>
         <figure><img src="assets/images/prototype-armor.jpg" alt="实体制作项目"></figure>
-        <figure><img src="assets/images/consumer-product.jpg" alt="消费产品实践"></figure>
       </div>
 
-      <div class="profile-footer" data-reveal>
-        <div><span>CURRENT</span><b>XbotPark 在孵项目联创</b></div>
-        <div><span>FOCUS</span><b>消费科技 · AI 硬件 · 桌面制造</b></div>
-        <div><span>BASE</span><b>Shenzhen, China</b></div>
-        <a href="mailto:qingrenjack@gmail.com">qingrenjack@gmail.com</a>
-      </div>
+      <footer class="about-footer" data-reveal>
+        <div><small>CURRENT ROLE</small><b>XbotPark 在孵项目联创</b></div>
+        <div><small>FOCUS</small><b>消费科技 · AI 硬件 · 桌面制造</b></div>
+        <a href="mailto:qingrenjack@gmail.com"><span>LET'S BUILD SOMETHING</span><b>qingrenjack@gmail.com ↗</b></a>
+      </footer>
     </section>
   </main>
 
   <dialog class="project-dialog" aria-labelledby="dialog-title">
     <button class="dialog-close" aria-label="关闭项目详情">×</button>
-    <div class="dialog-media"><img src="assets/images/application-desk.jpg" alt="项目详情图片"></div>
-    <div class="dialog-copy">
+    <div class="dialog-visual"><img src="assets/images/application-desk.jpg" alt="项目详情图片"></div>
+    <div class="dialog-content">
       <p class="dialog-kicker"></p>
       <h2 id="dialog-title"></h2>
       <p class="dialog-description"></p>
@@ -147,7 +158,47 @@
     </div>
   </dialog>
 
-  <footer><span>© 2026 Payson Tong</span><a href="#home">回到顶部 ↑</a></footer>
-  <script src="script.js"></script>
+  <dialog class="resume-dialog" aria-labelledby="resume-title">
+    <button class="resume-close" aria-label="关闭完整履历">×</button>
+    <header class="resume-header">
+      <img src="assets/images/profile-headshot.jpg" alt="童培新个人照片">
+      <div>
+        <p>PRODUCT BUILDER / FOUNDER</p>
+        <h2 id="resume-title">童培新 <span>Payson Tong</span></h2>
+        <b>XbotPark 在孵项目联创 · Shenzhen</b>
+      </div>
+      <a href="mailto:qingrenjack@gmail.com">qingrenjack@gmail.com ↗</a>
+    </header>
+    <div class="resume-body">
+      <section class="resume-education">
+        <p class="resume-label">EDUCATION</p>
+        <time>2020—至今</time>
+        <h3>江苏科技大学</h3>
+        <p>土木工程 / 嵌入式软件工程</p>
+      </section>
+      <section class="resume-history">
+        <p class="resume-label">EXPERIENCE & PROJECTS</p>
+        <ol>
+          <li><time>2021—2023</time><div><b>消费品渠道运营（电商方向）</b><p>消费品电商渠道运营相关工作。</p></div></li>
+          <li><time>2023—至今</time><div><b>自行车门店经营 / 骑行驿站</b><p>线下门店、服务流程与骑行社群运营。</p></div></li>
+          <li><time>2025.12—至今</time><div><b>Seeed 柴火创客空间</b><p>参与 IoT 智能招牌、ReSpeaker 会议麦克风、Rebot 等项目。</p></div></li>
+          <li><time>2026.02—至今</time><div><b>XLeRobot 黑客松</b><p>可更换式磁吸 3D 打印夹爪。</p></div></li>
+          <li><time>2026.02—至今</time><div><b>Ship it! 黑客松 · Mettle</b><p>Agent 竞技场与悬赏市场。</p></div></li>
+        </ol>
+      </section>
+      <section class="resume-skills">
+        <p class="resume-label">CAPABILITIES</p>
+        <ul>
+          <li><b>嵌入式与 IoT</b><span>传感器、通信协议、边缘计算方案</span></li>
+          <li><b>硬件快速原型</b><span>3D 打印、激光切割、动手验证</span></li>
+          <li><b>Web 与产品原型</b><span>从想法、交互到可演示产品</span></li>
+          <li><b>运营与实体场景</b><span>用户需求、供应链、服务流程与社群</span></li>
+          <li><b>机器人与 Agent</b><span>智能硬件、创客项目与前沿技术</span></li>
+        </ul>
+      </section>
+    </div>
+  </dialog>
+
+  <script src="payson-v4.js"></script>
 </body>
 </html>
